@@ -51,7 +51,7 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <select name="id" id="medicamento" required>
             <option value="">Escolha um medicamento</option>
             <?php foreach ($produtos as $produto): ?>
-                <option value="<?= $produto['id'] ?>"><?= $produto['nome'] ?> (Disponível: <?= $produto['quantidade'] ?>)</option>
+                <option value="<?= $produto['id'] ?>"><?= $produto['medicamento'] ?> (Disponível: <?= $produto['quantidade'] ?>)</option>
             <?php endforeach; ?>
         </select>
 
