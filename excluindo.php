@@ -11,13 +11,9 @@
 
 
 
-//$sql = $pdo->prepare("DELETE from produto WHERE id = $id;");
     $sql = $pdo->prepare("DELETE from produto WHERE id = :id;");
      $sql->bindValue(':id', $id);
- //   $sql->bindValue(':quantidade', $quantidade);
-   // $sql->bindValue(':preco', $preco);
-  //  $sql->bindValue(':validade', $validade);
-   // $sql->bindValue(':categoria', $categoria);
+
 
 
 

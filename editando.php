@@ -9,7 +9,7 @@
     $id = $_POST['id'];
 
 
-$sql = $pdo->prepare("UPDATE prod SET produto = :medicamento , quantidade = :quantidade, preco = :preco, validade = :validade, categoria = :categoria WHERE id = $id_Produto");
+$sql = $pdo->prepare("UPDATE produto SET medicamento = :medicamento , quantidade = :quantidade, preco = :preco, validade = :validade, categoria = :categoria  WHERE id = $id");
 $sql->bindValue(':medicamento', $medicamento);
     $sql->bindValue(':quantidade', $quantidade);
     $sql->bindValue(':preco', $preco);
@@ -20,7 +20,7 @@ $sql->bindValue(':medicamento', $medicamento);
 
     $sql->execute();
 
-    header("Location:cadastro.php");
+    header("Location:tabela.php");
 
 
 
