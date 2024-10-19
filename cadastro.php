@@ -32,6 +32,7 @@
             </form>
         </section>
     </div>
+    
     <?php
 
     $medicamento = $_POST["medicamento"] ?? null;

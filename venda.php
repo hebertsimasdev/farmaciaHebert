@@ -2,7 +2,6 @@
 session_start();
 require 'conexao.php';
 
-// Função para vender medicamento
 function venderMedicamento($conn) {
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['vender'])) {
         $id = $_POST['id'];
@@ -27,10 +26,8 @@ function venderMedicamento($conn) {
     }
 }
 
-// Chamar a função para processar a venda
 venderMedicamento($pdo);
 
-// Buscar medicamentos disponíveis para venda
 $stmt = $pdo->prepare("SELECT id, medicamento, quantidade FROM produto");
 $stmt->execute();
 $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -42,7 +39,7 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venda de Medicamentos</title>
-    <link rel="stylesheet" href="style.css"> <!-- Estilo opcional -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Venda de Medicamentos</h1>
