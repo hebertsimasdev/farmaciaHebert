@@ -1,0 +1,49 @@
+body {
+    
+    background: url(farmacia.jfif);
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Usa a altura total da tela */
+    margin: 0;
+    font-weight: bold;
+}
+
+
+
+.btn-outline {
+    background-color: transparent;
+    color: #000000;
+    border: 4px solid #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #a80a0a;
+    color: white;
+}
+
+
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    padding: 20px;
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; /* Coloca os itens do formulário em coluna */
+    align-items: center; /* Centraliza os itens do formulário */
+    text-align: justify;
+}
+
+
+label, select, input, button {
+    margin: 10px 0; /* Espaçamento entre os elementos */
+}
+
+button {
+    cursor: pointer; /* Muda o cursor ao passar o mouse sobre o botão */
+}

@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Funcionário</title>
+    <link rel="stylesheet" href="index.css">
+
 </head>
 
 <body>
+    <div id="   "></div>
     <h1>Cadastro de Funcionário</h1>
     <form action="cadastrandoFuncionario.php" method="POST">
         <label for="nome">Nome:</label>

@@ -39,14 +39,16 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Venda de Medicamentos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Venda de Medicamentos</h1>
+    
     <form method="post" action="">
-        <label for="medicamento">Selecione o Medicamento:</label>
+    <h1>Venda de Medicamentos</h1>
+
+        <label for="medicamento">Selecione o Medicamento</label>
         <select name="id" id="medicamento" required>
-            <option value="">Escolha um medicamento</option>
+            <option value="">Escolha um Medicamento</option>
             <?php foreach ($produtos as $produto): ?>
                 <option value="<?= $produto['id'] ?>"><?= $produto['medicamento'] ?> (Disponível: <?= $produto['quantidade'] ?>)</option>
             <?php endforeach; ?>
